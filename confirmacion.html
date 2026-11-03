@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es-419">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="description" content="Confirmación de correo de My Planner. Vuelve a la app para iniciar sesión.">
+  <title>My Planner · Tu cuenta</title>
+  <style>
+    :root{color-scheme:light;--paper:#faf7ef;--ink:#36382f;--muted:#64685e;--sage:#e5e9da;--blue:#556f80}
+    *{box-sizing:border-box}body{margin:0;min-height:100svh;background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;display:flex;flex-direction:column}
+    header{padding:32px clamp(24px,6vw,80px);display:flex;align-items:center;gap:12px;font-size:17px;font-weight:600;letter-spacing:.02em}.brand-icon{width:30px;height:30px;color:var(--blue)}
+    main{flex:1;display:grid;place-items:center;padding:28px 24px 64px}.card{width:min(100%,610px);padding:clamp(28px,6vw,58px);background:#fffdf8;border:1px solid #e4e5da;border-radius:28px;box-shadow:0 16px 65px #555d4810;text-align:center}
+    .seal{display:grid;place-items:center;width:76px;height:76px;border-radius:50%;background:var(--sage);color:#4f6451;margin:0 auto 28px}.seal svg{width:32px;height:32px}h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(32px,6vw,43px);line-height:1.13;font-weight:400;letter-spacing:-.035em;margin:0 0 20px}p{line-height:1.65;font-size:17px;color:var(--muted);margin:0 auto 22px;max-width:440px}.steps{background:#edf0e7;border-radius:16px;text-align:left;padding:22px 24px;margin-top:30px}.steps h2{font-size:16px;margin:0 0 12px}.steps ol{padding-left:20px;margin:0;line-height:1.85;color:#4f574c;font-size:15px}.closing{font-size:14px;margin:24px 0 0}footer{text-align:center;padding:0 24px 28px;font-size:13px;color:var(--muted)}footer a{color:var(--blue);text-underline-offset:4px;overflow-wrap:anywhere}a:focus-visible{outline:3px solid #556f80;outline-offset:5px}.eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:14px;color:#69745f}
+    @media(prefers-reduced-motion:no-preference){.card{animation:arrive .4s ease-out}@keyframes arrive{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}}
+  </style>
+</head>
+<body>
+  <header><svg class="brand-icon" viewBox="0 0 32 32" fill="none" aria-hidden="true"><rect x="5" y="5" width="22" height="24" rx="4" stroke="currentColor" stroke-width="1.8"/><path d="M11 3v5m10-5v5M10 15h12m-12 5h8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>My Planner</header>
+  <main><section class="card" aria-labelledby="title">
+    <div class="seal" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path id="mark" d="M8 16h16M16 8v16" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <div class="eyebrow">Un espacio para ordenar tu día</div>
+    <h1 id="title">Vuelve a tu planner</h1>
+    <p id="message">Si ya confirmaste tu correo, abre My Planner e inicia sesión. Esta página no te pide tu contraseña.</p>
+    <div class="steps"><h2>Para continuar</h2><ol><li>Abre la aplicación My Planner.</li><li>Entra en <strong>Ajustes → Iniciar sesión</strong>.</li><li>Usa tu correo y la contraseña que creaste para la app.</li></ol></div>
+    <p class="closing" id="closing">Puedes cerrar esta pestaña y volver a la aplicación.</p>
+  </section></main>
+  <footer>¿Necesitas ayuda? <a href="mailto:myplannerxvecchio@gmail.com">myplannerxvecchio@gmail.com</a> · <a href="privacidad.html">Privacidad</a> · <a href="soporte.html">Ayuda</a></footer>
+  <script src="confirmation.js"></script>
+</body>
+</html>
